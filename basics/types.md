@@ -24,6 +24,8 @@ string SomeString = "ABC";
 char SomeChar = 'C';
 int[] SomeArr = {4,3,2,1}
 Console.WriteLine($"output is {SomeString}");
+
+var SomeVar = "hi";
 ```
 {% endcode %}
 
@@ -35,6 +37,8 @@ string SomeString = "ABC";
 char SomeChar = 'C';
 int[] SomeArr = {4,3,2,1};
 std::cout << "output is "  << SomeString << endl;
+
+auto SomeVar = "hi";
 ```
 {% endcode %}
 
