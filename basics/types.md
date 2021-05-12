@@ -48,6 +48,24 @@ auto SomeVar = "hi";
  Notice C++ and C\# arrays are allocated at compile time and can't be resized. 
 {% endhint %}
 
+### Vectors
+
+{% code title="C\#" %}
+```csharp
+int[] SomeArr = {1,2,3,4}; 
+int lastelem = SomeArr[^1];
+//SomeArr[^1] == SomeArr[3] , ^1 is -1 in python
+SomeArr[2..]
+SomeArr[1..3]
+
+List<int> SomeList = new List<int>{1,2,3,4};
+foreach (int i in SomeList){
+    Console.WriteLine(i);
+} 
+
+```
+{% endcode %}
+
 ### Fibonacci
 
 {% code title="C\#" %}
