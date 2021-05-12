@@ -45,42 +45,60 @@ auto SomeVar = "hi";
 {% endcode %}
 
 {% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
+ Notice C++ and C\# arrays are allocated at compile time and can't be resized. 
 {% endhint %}
 
-### Vectors
+### Fibonacci
 
 {% code title="C\#" %}
 ```csharp
-    public int Fib(int n) {
+public int fib(int n) {
+    if(n == 0){return 0;} //C# will do an arrayout of bounds unlike C++ when n = 0
+    int[] F = new int[n+1];
+    F[0] = 0;
+    F[1] = 1; //if n == 0 array out of bounds
+    for(int i = 2; i <= n; i++){
+        F[i] = F[i-1] + F[i-2];
+    }
+    return F[n];
+            
+}
+```
+{% endcode %}
 
-        int[] F = new int[n+1];
-        F[0] = 0;
-        F[1] = 1;
-        for(int i = 2; i <= n; i++){
-            F[i] = F[i-1] + F[i-2];
-        }
-        return F[n];
+{% code title="C\#" %}
+```cpp
+public int fib(int n) { //recursive using switch case statement
+    int output = n switch
+    {
+        0 => 0,
+        1 => 1,
+        int x => fib(x-2) + fib(x-1) 
+
+    };
+    return output;
         
     
-    }
+}
 ```
 {% endcode %}
 
 {% code title="C++" %}
 ```cpp
-    int fib(int n) {
-        //int F[n] does not work since n is a variable and cannot initalize 
-        //array F[n] at compile time
-        int F[100] = {0};
-        F[0] = 0;
-        F[1] = 1;
-        for(int i = 2; i <= n; i++){
-            F[i] = F[i-1] + F[i-2];
-        }
-        return F[n];
-        
+int fib(int n) {
+    //int F[n] does not work since n is a variable and cannot initalize 
+    //array F[n] at compile time
+    int F[100] = {0};
+    F[0] = 0;
+    F[1] = 1;
+    for(int i = 2; i <= n; i++){
+        F[i] = F[i-1] + F[i-2];
     }
+    return F[n];
+        
+}
 ```
 {% endcode %}
+
+
 
