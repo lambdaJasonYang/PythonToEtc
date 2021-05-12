@@ -16,13 +16,14 @@ print(f"output is {SomeString}");
 ```
 {% endcode %}
 
-{% code title="CSharp" %}
+{% code title="C\#" %}
 ```bash
 int SomeNum = 1;
 bool SomeBool = true;
 string SomeString = "ABC";
 char SomeChar = 'C';
 int[] SomeArr = {4,3,2,1}
+int[] F = new int[n];
 Console.WriteLine($"output is {SomeString}");
 
 var SomeVar = "hi";
@@ -36,6 +37,7 @@ bool SomeBool = true;
 string SomeString = "ABC";
 char SomeChar = 'C';
 int[] SomeArr = {4,3,2,1};
+int F[10];
 std::cout << "output is "  << SomeString << endl;
 
 auto SomeVar = "hi";
@@ -48,7 +50,24 @@ auto SomeVar = "hi";
 
 ### Vectors
 
-{% code title="" %}
+{% code title="C\#" %}
+```csharp
+    public int Fib(int n) {
+
+        int[] F = new int[n+1];
+        F[0] = 0;
+        F[1] = 1;
+        for(int i = 2; i <= n; i++){
+            F[i] = F[i-1] + F[i-2];
+        }
+        return F[n];
+        
+    
+    }
+```
+{% endcode %}
+
+{% code title="C++" %}
 ```cpp
     int fib(int n) {
         //int F[n] does not work since n is a variable and cannot initalize 
