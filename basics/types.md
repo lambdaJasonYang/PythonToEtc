@@ -1,6 +1,6 @@
 # Types
 
-## Types
+## Simple Types
 
 Becoming a super hero is a fairly straight forward process:
 
@@ -46,7 +46,22 @@ auto SomeVar = "hi";
  Super-powers are granted randomly so please submit an issue if you're not happy with yours.
 {% endhint %}
 
-Once you're strong enough, save the world:
+### Vectors
 
-
+{% code title="" %}
+```cpp
+    int fib(int n) {
+        //int F[n] does not work since n is a variable and cannot initalize 
+        //array F[n] at compile time
+        int F[100] = {0};
+        F[0] = 0;
+        F[1] = 1;
+        for(int i = 2; i <= n; i++){
+            F[i] = F[i-1] + F[i-2];
+        }
+        return F[n];
+        
+    }
+```
+{% endcode %}
 
