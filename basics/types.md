@@ -66,23 +66,6 @@ public int fib(int n) {
 ```
 {% endcode %}
 
-{% code title="C\#" %}
-```cpp
-public int fib(int n) { //recursive using switch case statement
-    int output = n switch
-    {
-        0 => 0,
-        1 => 1,
-        int x => fib(x-2) + fib(x-1) 
-
-    };
-    return output;
-        
-    
-}
-```
-{% endcode %}
-
 {% code title="C++" %}
 ```cpp
 int fib(int n) {
@@ -96,6 +79,23 @@ int fib(int n) {
     }
     return F[n];
         
+}
+```
+{% endcode %}
+
+{% code title="C\#" %}
+```cpp
+public int fib(int n) { //recursive using switch case statement
+    int output = n switch
+    {
+        0 => 0,
+        1 => 1,
+        int x => fib(x-2) + fib(x-1) 
+
+    };
+    return output;
+        
+    
 }
 ```
 {% endcode %}
