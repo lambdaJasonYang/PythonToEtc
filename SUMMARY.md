@@ -12,3 +12,7 @@
 
 * [Delegates](intermediate/delegates.md)
 
+## Algorithms
+
+* [Combination Sum](algorithms/combination-sum.md)
+
