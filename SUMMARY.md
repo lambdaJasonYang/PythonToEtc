@@ -6,7 +6,7 @@
 
 * [Types](basics/types.md)
 * [Delegates](basics/untitled-1.md)
-* [Untitled](basics/untitled.md)
+* [Gotchas](basics/untitled.md)
 
 ## Intermediate
 

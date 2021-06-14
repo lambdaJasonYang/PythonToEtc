@@ -4,6 +4,8 @@
 
 Becoming a super hero is a fairly straight forward process:
 
+{% tabs %}
+{% tab title="Python" %}
 {% code title="Python" %}
 ```python
 #python
@@ -15,22 +17,27 @@ SomeArr = [4,3,2,1]
 print(f"output is {SomeString}");
 ```
 {% endcode %}
+{% endtab %}
 
-{% code title="C\#" %}
-```bash
+{% tab title="C\#" %}
+```csharp
 int SomeNum = 1;
 bool SomeBool = true;
-string SomeString = "ABC";
-char SomeChar = 'C';
+string SomeString = "ABC"; //double quotes make strings
+char SomeChar = 'C'; //single quote are characters
 int[] SomeArr = {4,3,2,1}
 int[] F = new int[n];
 Console.WriteLine($"output is {SomeString}");
 
 var SomeVar = "hi";
+  
+//The @ symbol creates a 'verbatim string literal' allowing
+//double quotes without escaping. 
+string str = @"Hello, ""World""";
 ```
-{% endcode %}
+{% endtab %}
 
-{% code title="C++" %}
+{% tab title="C++" %}
 ```cpp
 int SomeNum =  1;
 bool SomeBool = true;
@@ -42,7 +49,8 @@ std::cout << "output is "  << SomeString << endl;
 
 auto SomeVar = "hi";
 ```
-{% endcode %}
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
  Notice C++ and C\# arrays are allocated at compile time and can't be resized. 
@@ -68,10 +76,13 @@ foreach (int i in SomeList){
 
 ### Fibonacci
 
-{% code title="C\#" %}
+{% tabs %}
+{% tab title="C\#" %}
 ```csharp
 public int fib(int n) {
-    if(n == 0){return 0;} //C# will do an arrayout of bounds unlike C++ when n = 0
+    if(n == 0){return 0;} //required if statement
+    //C# will do an arrayout of bounds 
+    //unlike C++ when n = 0
     int[] F = new int[n+1];
     F[0] = 0;
     F[1] = 1; //if n == 0 array out of bounds
@@ -81,13 +92,16 @@ public int fib(int n) {
     return F[n];
             
 }
-```
-{% endcode %}
 
-{% code title="C++" %}
+
+```
+{% endtab %}
+
+{% tab title="C++" %}
 ```cpp
 int fib(int n) {
-    //int F[n] does not work since n is a variable and cannot initalize 
+    //int F[n] does not work since n is a variable 
+    //and cannot initalize 
     //array F[n] at compile time
     int F[100] = {0};
     F[0] = 0;
@@ -99,9 +113,10 @@ int fib(int n) {
         
 }
 ```
-{% endcode %}
+{% endtab %}
+{% endtabs %}
 
-{% code title="C\#" %}
+{% code title="C\# Linq syntax" %}
 ```cpp
 public int fib(int n) { //recursive using switch case statement
     int output = n switch
@@ -109,11 +124,9 @@ public int fib(int n) { //recursive using switch case statement
         0 => 0,
         1 => 1,
         int x => fib(x-2) + fib(x-1) 
-
     };
     return output;
         
-    
 }
 ```
 {% endcode %}
