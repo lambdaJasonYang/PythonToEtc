@@ -2,6 +2,8 @@
 
 Given list and target. Find number of sublists that sum to target, allow repeats.
 
+{% tabs %}
+{% tab title="Python" %}
 ```python
 goal = []
 def combsum(Arr,target,acc):
@@ -19,4 +21,6 @@ def combsum(Arr,target,acc):
         
 
 ```
+{% endtab %}
+{% endtabs %}
 
