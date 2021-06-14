@@ -15,6 +15,8 @@ SomeString = "ABC"
 SomeChar = "C"
 SomeArr = [4,3,2,1]
 print(f"output is {SomeString}");
+
+bleh = r"Hello "World""
 ```
 {% endcode %}
 {% endtab %}
@@ -31,9 +33,9 @@ Console.WriteLine($"output is {SomeString}");
 
 var SomeVar = "hi";
   
-//The @ symbol creates a 'verbatim string literal' allowing
+//The @ symbol creates a raw string allowing
 //double quotes without escaping. 
-string str = @"Hello, ""World""";
+string bleh = @"Hello, ""World""";
 ```
 {% endtab %}
 
