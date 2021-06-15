@@ -29,6 +29,7 @@ string SomeString = "ABC"; //double quotes make strings
 char SomeChar = 'C'; //single quote are characters
 int[] SomeArr = {4,3,2,1}
 int[] F = new int[n];
+string[] names = new[] { "John", "Smith" };
 Console.WriteLine($"output is {SomeString}");
 
 var SomeVar = "hi";

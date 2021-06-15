@@ -7,6 +7,7 @@
 * [Types](basics/types.md)
 * [Delegates](basics/untitled-1.md)
 * [Gotchas](basics/untitled.md)
+* [Strings](basics/strings.md)
 
 ## Intermediate
 
