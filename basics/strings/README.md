@@ -1,5 +1,7 @@
 # Strings
 
+## String Formatting
+
 {% tabs %}
 {% tab title="C\#" %}
 ```csharp
@@ -17,36 +19,60 @@ var str = String.Format("Hello, {0}", world);
 //Hello, World
 ```
 
+{% tabs %}
+{% tab title="Concat, which  is bad practice" %}
 ```csharp
-public void StringsAreReallyImmutable()
+public void StringConcatBadPractice()
 {
-    //So here's the thing. Concatenating strings is cool
-    //and all. But if you think you are modifying the original
+    //if you think you are modifying the original
     //string, you'd be wrong. 
-
     var strA = "Hello, ";
-    var originalString = strA; 
-    //originalString points to "Hello,"
+    var originalString = strA;//originalString points to "Hello,"
     var strB = "World";
-    strA += strB;
+    strA += strB; //CONCAT
     //allocate new memory that holds "Hello, World"
     //Change strA pointer from "Hello," to "Hello, World"
     Assert.Equal("Hello, World", strA);
     Assert.Equal("Hello, ", originalString);
     
-    
-    
     //Very important point - if you do this kind
     //of string concatenation in a tight loop, you'll use a lot of memory
     //because the originalString will hang around in memory.
     
-    //Best Alternative use StringBuilder
+    //BEST ALTERNATIVE USE StringBuilder
 }
 
 
 ```
+{% endtab %}
+{% endtabs %}
 
-String formatting
+{% tabs %}
+{% tab title="String Builder is  better than concat" %}
+```csharp
+var strBuilder = new System.Text.StringBuilder();
+strBuilder.Append("The ")
+          .Append("little ")
+          .Append("fox");
+var str = strBuilder.ToString();
+//The little fox
+```
+{% endtab %}
+{% endtabs %}
+
+{% tabs %}
+{% tab title="String Builder with formatting" %}
+```csharp
+var strBuilder = new System.Text.StringBuilder();
+strBuilder.AppendFormat("{0} {1} {2}", "The", "quick", "brown")
+		  		.AppendFormat("{0} {1}.", "lazy", "dog");
+var str = strBuilder.ToString();
+//The quick brownlazy dog.
+```
+{% endtab %}
+{% endtabs %}
+
+## Padding, date, currency
 
 {% tabs %}
 {% tab title="C\# Pad\_Left" %}
