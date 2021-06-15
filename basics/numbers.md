@@ -1,4 +1,4 @@
-# Numbers
+# Float,Double,Decimal
 
 <table>
   <thead>

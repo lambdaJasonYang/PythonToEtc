@@ -6,7 +6,7 @@
 
 * [Types](basics/types.md)
 * [Delegates](basics/untitled-1.md)
-* [Numbers](basics/numbers.md)
+* [Float,Double,Decimal](basics/numbers.md)
 * [Nulls](basics/nulls.md)
 * [Gotchas](basics/untitled.md)
 * [Strings](basics/strings/README.md)
