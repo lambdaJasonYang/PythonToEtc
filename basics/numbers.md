@@ -92,11 +92,11 @@ Use decimal type when dealing with == of numbers
 {% endhint %}
 
 ```csharp
-float x = 0.1f //float
-double y = 0.2d //double
-decimal z = 0.3m //decimal
+float xfloat = 0.1f //float
+double ydouble = 0.2d //double
+decimal zdecimal = 0.3m //decimal
 
-var result = z + (decimal)x
+var result = zdecimal + (decimal)xfloat
 //operations with decimal require CASTING
 ```
 
