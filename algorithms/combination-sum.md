@@ -24,3 +24,5 @@ def combsum(Arr,target,acc):
 {% endtab %}
 {% endtabs %}
 
+![](../.gitbook/assets/whiteboard-1-.png)
+
