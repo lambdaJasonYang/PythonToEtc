@@ -54,7 +54,7 @@
     </tr>
     <tr>
       <td style="text-align:left">suffix</td>
-      <td style="text-align:left">2.13<b>m</b> 
+      <td style="text-align:left">2.13<b>f</b>
       </td>
       <td style="text-align:left">2.13<b>d</b>
       </td>
