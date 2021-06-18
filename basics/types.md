@@ -53,6 +53,29 @@ std::cout << "output is "  << SomeString << endl;
 auto SomeVar = "hi";
 ```
 {% endtab %}
+
+{% tab title="Haskell" %}
+```haskell
+one :: Int
+one = 1
+two :: Integer
+two =  2
+--(Floating t) is a type class
+half :: (Floating t) => t  
+half = 0.5
+
+checkPassword :: String -> String
+checkPassword password = if password == "swordfish" || password == "mellon"
+                         then "You're in."
+                         else "ACCESS DENIED!"
+
+postagePrice :: Int -> Int
+postagePrice x
+            | (x > 5000) = 6000
+            | (x > 500) = 300 + x
+            | otherwise = 250
+```
+{% endtab %}
 {% endtabs %}
 
 {% hint style="info" %}

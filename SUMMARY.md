@@ -10,6 +10,7 @@
 * [Nulls](basics/nulls.md)
 * [Gotchas](basics/untitled.md)
 * [Strings](basics/strings/README.md)
+  * [Monad](basics/strings/monad.md)
   * [Substrings](basics/strings/substrings.md)
 
 ## Intermediate
