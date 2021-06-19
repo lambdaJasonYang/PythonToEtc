@@ -1,5 +1,7 @@
 # Substrings
 
+{% tabs %}
+{% tab title="C\#" %}
 ```csharp
 string str = "hello";
 string str2 = str.Substring(1,3);
@@ -11,6 +13,8 @@ string str2 = str.Substring(1,3);
 string str3 = str.Substring(1); //[1,inf)
 //ello
 ```
+{% endtab %}
+{% endtabs %}
 
 ```csharp
 string str = "hello"
