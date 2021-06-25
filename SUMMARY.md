@@ -1,11 +1,12 @@
 # Table of contents
 
 * [Basic Types](README.md)
+* [Very Basics Tutorial](types.md)
 
 ## Basics
 
-* [Classes](basics/classes.md)
-* [Very Basics Tutorial](basics/types.md)
+* [Classes](basics/classes/README.md)
+  * [Enum](basics/classes/enum.md)
 * [Delegates](basics/untitled-1.md)
 * [Float,Double,Decimal](basics/numbers.md)
 * [Nulls](basics/nulls.md)
@@ -13,10 +14,7 @@
 * [Arrays Lists Stack](basics/arrays-lists-stack.md)
 * [Strings](basics/strings/README.md)
   * [Substrings](basics/strings/substrings.md)
-
----
-
-* [Monad](monad.md)
+* [Monad](basics/monad.md)
 
 ## Intermediate
 
