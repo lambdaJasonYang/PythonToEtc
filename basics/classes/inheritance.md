@@ -1,5 +1,9 @@
 # Inheritance
 
+{% tabs %}
+{% tab title="C\#" %}
+
+
 ```csharp
 public class Dog
 {
@@ -50,4 +54,16 @@ public class Chihuahua : Dog
     }
 }
 ```
+
+```aspnet
+Assert.True(typeof(Dog).IsAssignableFrom(typeof(Chihuahua)));
+```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
+
+
 
