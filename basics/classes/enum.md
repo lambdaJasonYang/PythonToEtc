@@ -3,14 +3,14 @@
 
 
 ```csharp
-        enum MeditationForms
-        {
-            Mindfulness,
-            SilentIllumination,
-            Contemplation,
-            Observation
+enum MeditationForms
+ {
+ Mindfulness,
+ SilentIllumination,
+ Contemplation,
+ Observation
 
-        }
+}
 
 /*
 Creating an instance of an enum is as easy as assigning a member
@@ -27,10 +27,12 @@ Assert.Equal(typeof(MeditationForms), mindfulness.GetType());
 
 //MeditationForms Observation = (MeditationForms)3; 
 //this Fails the assertion because it is done on runtime
-/*
-Adding new members to an enum is straight-forward and as you'd expect.
-Try adding a new member to the 'MeditationForms' enum.
-*/
+
+//Assert.Equal(1,quietForm); this assert doesnt work, enum becomes its own type
+var quietForm = (MeditationForms)1; //we need to type cast 1 to the enum type
+Assert.Equal(MeditationForms.SilentIllumination, quietForm);
+
+
 Assert.True(Enum.IsDefined(typeof(MeditationForms), "Observation"));
 ```
 
