@@ -6,6 +6,7 @@
 ## Basics
 
 * [Classes](basics/classes/README.md)
+  * [Inheritance](basics/classes/inheritance.md)
   * [Enum](basics/classes/enum.md)
 * [Delegates](basics/untitled-1.md)
 * [Float,Double,Decimal](basics/numbers.md)
