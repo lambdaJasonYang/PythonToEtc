@@ -1,4 +1,4 @@
-# Types
+# Very Basics Tutorial
 
 ## Simple Types
 

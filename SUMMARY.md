@@ -5,7 +5,7 @@
 ## Basics
 
 * [Classes](basics/classes.md)
-* [Types](basics/types.md)
+* [Very Basics Tutorial](basics/types.md)
 * [Delegates](basics/untitled-1.md)
 * [Float,Double,Decimal](basics/numbers.md)
 * [Nulls](basics/nulls.md)
