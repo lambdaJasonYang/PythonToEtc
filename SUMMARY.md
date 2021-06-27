@@ -11,11 +11,14 @@
 * [Delegates](basics/untitled-1.md)
 * [Float,Double,Decimal](basics/numbers.md)
 * [Nulls](basics/nulls.md)
-* [Gotchas](basics/untitled.md)
 * [Arrays Lists Stack](basics/arrays-lists-stack.md)
 * [Strings](basics/strings/README.md)
   * [Substrings](basics/strings/substrings.md)
 * [Monad](basics/monad.md)
+
+---
+
+* [Gotchas](untitled.md)
 
 ## Intermediate
 
