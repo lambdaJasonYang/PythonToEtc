@@ -8,7 +8,7 @@
 * [Classes](basics/classes/README.md)
   * [Inheritance](basics/classes/inheritance.md)
   * [Enum](basics/classes/enum.md)
-* [Delegates](basics/untitled-1.md)
+* [Delegates\(Abstract function + lambdas\)](basics/untitled-1.md)
 * [Float,Double,Decimal](basics/numbers.md)
 * [Nulls](basics/nulls.md)
 * [Arrays Lists Stack](basics/arrays-lists-stack.md)

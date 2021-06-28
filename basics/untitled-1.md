@@ -1,4 +1,4 @@
-# Delegates
+# Delegates\(Abstract function + lambdas\)
 
 {% tabs %}
 {% tab title="First Tab" %}
