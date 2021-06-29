@@ -10,7 +10,7 @@
   * [Enum](basics/classes/enum.md)
 * [Delegates\(Abstract function + lambdas\)](basics/untitled-1.md)
 * [Float,Double,Decimal](basics/numbers.md)
-* [Nulls](basics/nulls.md)
+* [Nulls and Maybe Functor](basics/nulls.md)
 * [Arrays Lists Stack](basics/arrays-lists-stack.md)
 * [Strings](basics/strings/README.md)
   * [Substrings](basics/strings/substrings.md)

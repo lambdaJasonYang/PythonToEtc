@@ -1,4 +1,4 @@
-# Nulls
+# Nulls and Maybe Functor
 
 {% tabs %}
 {% tab title="First Tab" %}
@@ -38,6 +38,18 @@ int i = 0;
 
 int? nullableInt = null; //Maybe functor 
 //but you can do this
+```
+
+
+
+```csharp
+int? nullableInt = null;
+
+//the below 2 expression are the same
+int x = nullableInt ?? 42; 
+int x = nullableInt != null ? nullableInt : 42
+//if nullableInt is not null, x is set as nullableInt else it is 42
+Assert.Equal(42, x);
 ```
 {% endtab %}
 
