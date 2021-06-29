@@ -1,6 +1,14 @@
 # Strings
 
+{% tabs %}
+{% tab title="First Tab" %}
 ## String Formatting
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
 
 {% tabs %}
 {% tab title="C\#" %}
