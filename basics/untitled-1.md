@@ -73,8 +73,6 @@ Assert.Equal("2", a(1, 1));
 Predicate can only take 1 generic parameter unlike the delegates above
 {% endhint %}
 
-
-
 ```text
 bool IntEqualsFourtyTwo = (int x) => { return x == 42};
 Predicate<int> i = (Predicate<int>)IntEqualsFourtyTwo;
