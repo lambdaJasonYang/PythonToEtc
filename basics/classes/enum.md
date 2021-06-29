@@ -1,5 +1,7 @@
 # Enum
 
+{% tabs %}
+{% tab title="C\#" %}
 
 
 ```csharp
@@ -65,4 +67,10 @@ public void EnumsCanBeFlags()
     Assert.True(workWeek.HasFlag(DayOfTheWeek.Friday)); // Assuming you work Fridays :)
 }
 ```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
 
