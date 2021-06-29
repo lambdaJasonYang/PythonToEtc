@@ -2,6 +2,15 @@
 
 {% tabs %}
 {% tab title="C\#" %}
+## Overview
+
+```csharp
+delegate int bleh(string x, double y);
+Action<string, double> blah;
+Func<string,double,int> bluh;
+Predicate<int> bloh;
+```
+
 ## Monoid as a Delegate 
 
 ```csharp
@@ -15,6 +24,9 @@ Monoid bleh = new Monoid(math.Add)
 private void SomeFunction( Monoid duhr){
     duhr(2,4);
   }  
+  
+bleh = bleh + subtraction;
+bleh = bleh + addition;
 
 ```
 
@@ -22,7 +34,6 @@ private void SomeFunction( Monoid duhr){
 
 ```csharp
 var lambdaFunct = delegate (int x){ return x; };
-var lambdaFunct = (int x) => {return x}
                 
 ```
 
@@ -38,13 +49,43 @@ Action<int, string> somefunct = AddEqualsFourtyTwo;
 somefunct(12, (string)"30");
 ```
 
-|  |  |
-| :--- | :--- |
-|  |  |
+## Func are Delegates that can return any type
+
+{% hint style="info" %}
+Last generic parameter of Func is the return type 
+{% endhint %}
+
+```csharp
+//Func<string> means () -> string
+//last generic parameter is string meaning the return type is string
+Func<string> printMonth = FirstMonth;
+Assert.Equal("January", printMonth());
+
+//Func<int, int, string> means (int, int) -> string
+Func<int, int, string> a = Add;
+Assert.Equal("2", a(1, 1));
+
+```
+
+## Predicate are Delegates that return bool
+
+{% hint style="danger" %}
+Predicate can only take 1 generic parameter unlike the delegates above
+{% endhint %}
+
+
+
+```text
+bool IntEqualsFourtyTwo = (int x) => { return x == 42};
+Predicate<int> i = (Predicate<int>)IntEqualsFourtyTwo;
+Assert.True(i(42));
+```
 {% endtab %}
 
 {% tab title="Second Tab" %}
 
 {% endtab %}
 {% endtabs %}
+
+
 
