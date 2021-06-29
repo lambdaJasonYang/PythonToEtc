@@ -6,6 +6,10 @@ description: Classes are basically custom types
 
 
 
+{% tabs %}
+{% tab title="First Tab" %}
+
+
 class MyAnimals { public const int Legs = 2;
 
 ```csharp
@@ -77,6 +81,12 @@ public void UseAccessorsToReturnInstanceVariables()
 {% hint style="info" %}
 class method set  has implicit parameter, value 
 {% endhint %}
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
 
 
 
