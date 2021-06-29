@@ -22,7 +22,3 @@
 
 ## Intermediate
 
-## Algorithms
-
-* [Combination Sum](algorithms/combination-sum.md)
-

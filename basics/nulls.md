@@ -1,5 +1,7 @@
 # Nulls
 
+{% tabs %}
+{% tab title="First Tab" %}
 ```csharp
 public void BadWayToCheckNull()
 {
@@ -27,4 +29,10 @@ public void AnotherWayToCheckNull()
  //assertion passes
 }
 ```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
 

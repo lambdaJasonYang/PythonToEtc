@@ -1,5 +1,7 @@
 # Arrays Lists Stack
 
+{% tabs %}
+{% tab title="First Tab" %}
 ```csharp
 var empty_array = new object[] { };
 Assert.Equal(typeof(object[]), empty_array.GetType());
@@ -58,4 +60,10 @@ Assert.Equal(new String[] { "Hello" }, list.ToArray());
 list.AddAfter(list.Find("Hello"), "World");
 Assert.Equal(new String[] { "Hello", "World" }, list.ToArray());
 ```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
 

@@ -1,5 +1,9 @@
 # Float,Double,Decimal
 
+{% tabs %}
+{% tab title="First Tab" %}
+
+
 <table>
   <thead>
     <tr>
@@ -64,15 +68,8 @@
   </tbody>
 </table>
 
-{% tabs %}
-{% tab title="C\#" %}
 {% code title="Precise math equality?" %}
 ```csharp
-float f = 0.3f + 0.6f;
-Assert.True(f != 0.9f); //UNEXPECTED BEHAVIOR
-//odd behavior
-
-//This behaviour is the most important consideration when 
 //deciding whether to use
 //Floating Point number types (`float` and `double`) 
 //or the `decimal` type.
@@ -84,8 +81,6 @@ Assert.True(result == 0.7m); //EXPECTED BEHAVIOR
 
 ```
 {% endcode %}
-{% endtab %}
-{% endtabs %}
 
 {% hint style="info" %}
 Use decimal type when dealing with == of numbers
@@ -100,13 +95,19 @@ var result = zdecimal + (decimal)xfloat
 //operations with decimal require CASTING
 ```
 
-{% tabs %}
-{% tab title="String to Number" %}
+{% code title="String to Number" %}
 ```csharp
 var F = float.Parse("3.4E+38", CultureInfo.InvariantCulture);
 
 var D = decimal.Parse("593,543,950,336", CultureInfo.InvariantCulture);
 ```
+{% endcode %}
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
 {% endtab %}
 {% endtabs %}
+
+
 
