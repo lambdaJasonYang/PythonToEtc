@@ -29,6 +29,16 @@ public void AnotherWayToCheckNull()
  //assertion passes
 }
 ```
+
+
+
+```csharp
+int i = 0;
+//i = null; //You can't do this
+
+int? nullableInt = null; //Maybe functor 
+//but you can do this
+```
 {% endtab %}
 
 {% tab title="Second Tab" %}
