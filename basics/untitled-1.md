@@ -25,6 +25,8 @@ Func<string,double,int> bluh;
 Predicate<int> bloh;
 //Predicate<int> contains the set of all functions with
 //type (int) -> bool
+
+bleh~Action~Func~Predicate
 ```
 
 ## Monoid as a Delegate 
