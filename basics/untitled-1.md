@@ -4,6 +4,9 @@
 {% tab title="C\#" %}
 ## Overview
 
+Delegates are basically type aliases.   
+Using the "delegate" keyword first defines the type
+
 ```csharp
 delegate int bleh(string x, double y);
 Action<string, double> blah;
@@ -34,14 +37,9 @@ bleh = bleh + addition;
 
 ```csharp
 public class bleh{
-	public delegate void TestDelegate();
-	public TestDelegate myfunct;
-	public bleh(){
-		myfunct = delegate(){   //this is the lambda function
-					Console.WriteLine(3);
-												};
-												
-	}	
+  public delegate int IntLambdaType(int x);
+  public IntLambdaType e = delegate(int a){return a;};
+
 }
                 
 ```
@@ -82,7 +80,7 @@ Assert.Equal("2", a(1, 1));
 Predicate can only take 1 generic parameter unlike the delegates above
 {% endhint %}
 
-```text
+```csharp
 bool IntEqualsFourtyTwo = (int x) => { return x == 42};
 Predicate<int> i = (Predicate<int>)IntEqualsFourtyTwo;
 Assert.True(i(42));
