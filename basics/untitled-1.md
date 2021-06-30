@@ -33,7 +33,16 @@ bleh = bleh + addition;
 ## Delgates and Lambdas
 
 ```csharp
-var lambdaFunct = delegate (int x){ return x; };
+public class bleh{
+	public delegate void TestDelegate();
+	public TestDelegate myfunct;
+	public bleh(){
+		myfunct = delegate(){   //this is the lambda function
+					Console.WriteLine(3);
+												};
+												
+	}	
+}
                 
 ```
 
