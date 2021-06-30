@@ -4,11 +4,15 @@
 {% tab title="C\#" %}
 ## Overview
 
-Delegates are basically type aliases.   
-Using the "delegate" keyword first defines the type
+Delegates are basically type aliases for functions.   
+Using the "delegate" keyword first defines the type.
 
 ```csharp
-delegate int bleh(string x, double y);
+delegate int bleh(string x, double y);// first define bleh type
+bleh pointTofunc = Thefunc; 
+//pointTofunc can contain the set of all functions with 
+//type (string,double) -> int
+
 Action<string, double> blah;
 Func<string,double,int> bluh;
 Predicate<int> bloh;
