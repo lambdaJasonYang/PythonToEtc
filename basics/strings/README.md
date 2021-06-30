@@ -2,24 +2,16 @@
 
 {% tabs %}
 {% tab title="First Tab" %}
-## String Formatting
-{% endtab %}
+## OS independent new Line
 
-{% tab title="Second Tab" %}
-
-{% endtab %}
-{% endtabs %}
-
-{% tabs %}
-{% tab title="C\#" %}
 ```csharp
 string poem = $"line 1 {System.Environment.NewLine}line 2 ";
 //output:
 //line 1
 //line 2
 ```
-{% endtab %}
-{% endtabs %}
+
+## String formatting
 
 ```csharp
 var world = "World";
@@ -27,8 +19,6 @@ var str = String.Format("Hello, {0}", world);
 //Hello, World
 ```
 
-{% tabs %}
-{% tab title="Concat, which  is bad practice" %}
 ```csharp
 public void StringConcatBadPractice()
 {
@@ -52,11 +42,9 @@ public void StringConcatBadPractice()
 
 
 ```
-{% endtab %}
-{% endtabs %}
 
-{% tabs %}
-{% tab title="String Builder is  better than concat" %}
+## String builder
+
 ```csharp
 var strBuilder = new System.Text.StringBuilder();
 strBuilder.Append("The ")
@@ -65,11 +53,7 @@ strBuilder.Append("The ")
 var str = strBuilder.ToString();
 //The little fox
 ```
-{% endtab %}
-{% endtabs %}
 
-{% tabs %}
-{% tab title="String Builder with formatting" %}
 ```csharp
 var strBuilder = new System.Text.StringBuilder();
 strBuilder.AppendFormat("{0} {1} {2}", "The", "quick", "brown")
@@ -77,13 +61,9 @@ strBuilder.AppendFormat("{0} {1} {2}", "The", "quick", "brown")
 var str = strBuilder.ToString();
 //The quick brownlazy dog.
 ```
-{% endtab %}
-{% endtabs %}
 
-## Padding, date, currency
+## Padding format
 
-{% tabs %}
-{% tab title="C\# Pad\_Left" %}
 ```csharp
 //pads three white space to the left 
 var str = string.Format("{0,3:}", "x");
@@ -97,9 +77,7 @@ var str = string.Format("{0,3:}", "pqr");
 
 //represent _ as whitespace
 ```
-{% endtab %}
 
-{% tab title="Pad\_Right" %}
 ```csharp
 //pads three white space to the right
 var str = string.Format("{0,-3:}", "x");
@@ -113,11 +91,7 @@ var str = string.Format("{0,-3:}", "pqr");
 
 //represent _ as whitespace
 ```
-{% endtab %}
-{% endtabs %}
 
-{% tabs %}
-{% tab title="Control number of decimal displayed C\#" %}
 ```csharp
 var str = string.Format("{0:.##}", 12.3456);
 //12.35
@@ -127,9 +101,7 @@ var str = string.Format("{0:.###}", 12.3456);
 
 //WARNING IMPLICIT ROUNDING
 ```
-{% endtab %}
 
-{% tab title="Extrapolate decimal places" %}
 ```csharp
 var str = string.Format("{0:.00}", 12.3);
 //12.30
@@ -137,11 +109,9 @@ var str = string.Format("{0:.00}", 12.3);
 var str = string.Format("{0:.000}", 12.3);
 //12.300
 ```
-{% endtab %}
-{% endtabs %}
 
-{% tabs %}
-{% tab title="Currency Formatting C\#" %}
+## Currency format
+
 ```csharp
 var str = string.Format("{0:n}", 123456);
 //123,456.00
@@ -150,8 +120,8 @@ var str = string.Format("{0:c}", 123456);
 //$123,456.00
 
 ```
-{% endtab %}
-{% endtabs %}
+
+## Date format
 
 ```csharp
 using System.Globalization;
@@ -174,6 +144,12 @@ strBuilder.Append("The ")
 var str = strBuilder.ToString();
 //The little fox
 ```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
 
 
 
