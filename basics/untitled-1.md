@@ -4,8 +4,7 @@
 {% tab title="C\#" %}
 ## Overview
 
-Delegates are basically type aliases for functions.   
-Using the "delegate" keyword first defines the type.
+Using the "delegate" keyword first defines the function type bleh.
 
 ```csharp
 delegate int bleh(string x, double y);// first define bleh type
