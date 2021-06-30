@@ -46,18 +46,25 @@ bleh = bleh + addition;
 
 ```
 
-## Delgates and Lambdas
+## Delgates and sorta-Lambdas
 
 ```csharp
 public class bleh{
-  public delegate int IntLambdaType(int x);
+  public delegate int IntLambdaType(int x); //Similar to Haskell type init
   public IntLambdaType e = delegate(int a){return a;};
 
 }
                 
 ```
 
-## Actions are Delegates that return Void
+{% hint style="info" %}
+Notice delegate is a like a type constructor that creates the IntLambdaType.
+
+Unlike delegates which has to be initalized  
+Actions Func Predicate can be used as types directly
+{% endhint %}
+
+## Actions are Functions that return Void
 
 ```csharp
 private void AddEqualsFourtyTwo(int x, string s)
@@ -69,7 +76,7 @@ Action<int, string> somefunct = AddEqualsFourtyTwo;
 somefunct(12, (string)"30");
 ```
 
-## Func are Delegates that can return any type
+## Func are Functions that return type of last param
 
 {% hint style="info" %}
 Last generic parameter of Func is the return type 
@@ -87,7 +94,7 @@ Assert.Equal("2", a(1, 1));
 
 ```
 
-## Predicate are Delegates that return bool
+## Predicate are Functions that return bool
 
 {% hint style="danger" %}
 Predicate can only take 1 generic parameter unlike the delegates above
