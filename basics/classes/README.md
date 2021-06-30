@@ -7,10 +7,10 @@ description: Classes are basically custom types
 
 
 {% tabs %}
-{% tab title="First Tab" %}
+{% tab title="C\#" %}
 
 
-class MyAnimals { public const int Legs = 2;
+
 
 ```csharp
 class Animal
