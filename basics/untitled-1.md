@@ -10,12 +10,22 @@ Using the "delegate" keyword first defines the type.
 ```csharp
 delegate int bleh(string x, double y);// first define bleh type
 bleh pointTofunc = Thefunc; 
-//pointTofunc can contain the set of all functions with 
+//bleh contains the set of all functions with 
 //type (string,double) -> int
 
+//Unlike bleh, Action<..> Funct<..> Predicate<..> 
+//do not need to be initialized
 Action<string, double> blah;
+//Action<string,double> contains the set of all functions with
+//type (string,double) -> void
+
 Func<string,double,int> bluh;
+//Func<string,double,int> contains the set of all functions with
+//type (string,double) -> int
+
 Predicate<int> bloh;
+//Predicate<int> contains the set of all functions with
+//type (int) -> bool
 ```
 
 ## Monoid as a Delegate 
