@@ -1,7 +1,7 @@
 # Nulls and Maybe Functor
 
 {% tabs %}
-{% tab title="First Tab" %}
+{% tab title="C\#" %}
 ```csharp
 public void BadWayToCheckNull()
 {
