@@ -2,6 +2,7 @@
 
 * [Basic Types](README.md)
 * [Very Basics Tutorial](types.md)
+* [packages](packages.md)
 
 ## Basics
 
