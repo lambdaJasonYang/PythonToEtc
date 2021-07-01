@@ -10,9 +10,10 @@
 
 ```cpp
 #include <iostream>
-template<typename T>
-T concat(T a, T b){
-    return a + b;
+//notice we can use non-template params as well
+template<typename T, int x = 5>
+T dosomething(T a){
+    return a + 5;
 }
 
 ```
@@ -20,11 +21,9 @@ T concat(T a, T b){
 ```cpp
 //template for class
 //typename T = int, means default template type is int
-//notice we can use non-templates like int arrlen as well
-template<typename T=int, int arrlen = 10>
+template<typename T=int>
 class bleh {
     T someVar;
-    int arr[arrlen]
     public: 
         bleh( T val = T{}) :  someVar(val) {}
         // T val = T{} means val is set to the default variable of type T
@@ -43,9 +42,16 @@ int main(){
 }
 ```
 
+{% hint style="info" %}
+```
+T{} is instantiation of default value for type T
+```
+{% endhint %}
+
+## Nested templates aka Functors
+
 ```text
 T{} is instantiation of default value for type T
-template<typename T=int> is default template type is int
 ```
 {% endtab %}
 {% endtabs %}
