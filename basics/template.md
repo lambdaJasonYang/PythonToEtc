@@ -1,3 +1,7 @@
+---
+description: Templates are just functors
+---
+
 # Template
 
 {% tabs %}
@@ -17,15 +21,28 @@ Usually we have `typename T` as a template parameter but we can also have real t
 template<typename T, int x = 5>
 T dosomething(T a){
     return a + x;
-}
+};
 ```
 
-## Functors, Templates as template parameters
+## Templates as template parameters
 
 aka nested templates
 
-```text
-template<typename T, template <typename> class Container>
+`template  <typename> class Container` is a template as a template parameter.  
+It means `Container` is a template type that takes 2 type parameters with `typename`.
+
+```cpp
+template<typename T, template <typename, typename> class Container>
+class Stack {
+    Container<T, std::allocator<T>> c;
+    //Containers require memory to be allocated so we use std::allocator
+    //Containers are templates aka Functors
+};
+
+int main(){
+    Stack<int, std::vector> stk;
+    //Notice vector is a Container
+}
 ```
 
 ## Templates with Classes
@@ -42,7 +59,7 @@ class bleh {
         //default value for int is 0     
         T get() { return someVar; }
         void set(T value){ someVar = value }
-}
+};
 
 //class method outside of class block
 template<typename T>
