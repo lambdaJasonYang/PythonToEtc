@@ -6,17 +6,29 @@
 {% endtab %}
 
 {% tab title="C++" %}
-## Templates
+## Templates parameters 
+
+Usually we have `typename T` as a template parameter but we can also have real types like int.  
+`template<...template params...>`  and the params are the generic types
 
 ```cpp
 #include <iostream>
-//notice we can use non-template params as well
+//typename T and int x are template parameters
 template<typename T, int x = 5>
 T dosomething(T a){
-    return a + 5;
+    return a + x;
 }
-
 ```
+
+## Functors, Templates as template parameters
+
+aka nested templates
+
+```text
+template<typename T, template <typename> class Container>
+```
+
+## Templates with Classes
 
 ```cpp
 //template for class
@@ -47,14 +59,10 @@ int main(){
 T{} is instantiation of default value for type T
 ```
 {% endhint %}
-
-## Nested templates aka Functors
-
-```text
-T{} is instantiation of default value for type T
-```
 {% endtab %}
 {% endtabs %}
+
+
 
 
 
