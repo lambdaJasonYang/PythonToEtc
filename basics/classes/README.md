@@ -2,7 +2,7 @@
 description: Classes are basically custom types
 ---
 
-# Classes
+# Classes, Enums, Inheritance
 
 
 

@@ -6,7 +6,7 @@
 
 ## Basics
 
-* [Classes](basics/classes/README.md)
+* [Classes, Enums, Inheritance](basics/classes/README.md)
   * [Inheritance](basics/classes/inheritance.md)
   * [Enum](basics/classes/enum.md)
 * [Delegates\(Abstract function + lambdas\)](basics/untitled-1.md)
