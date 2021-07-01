@@ -9,7 +9,7 @@ description: A form of metaprogramming
 
 {% endtab %}
 
-{% tab title="Second Tab" %}
+{% tab title="Python" %}
 
 
 ```python

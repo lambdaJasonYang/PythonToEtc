@@ -17,6 +17,7 @@
 * [Strings](basics/strings/README.md)
   * [Substrings](basics/strings/substrings.md)
 * [Monad](basics/monad.md)
+* [Template](basics/template.md)
 * [Linq](basics/linq.md)
 * [Closure](basics/closure.md)
 * [Decorator](basics/decorator.md)
