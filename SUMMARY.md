@@ -21,6 +21,7 @@
 * [Linq](basics/linq.md)
 * [Closure](basics/closure.md)
 * [Decorator](basics/decorator.md)
+* [Concurrency](basics/concurrency.md)
 
 ---
 
