@@ -14,7 +14,8 @@ void func(){
 }
 int main(){
     std::thread t1(func);
-    t1.join();
+    t1.join(); //you must join or detach a thread
+    //process will terminate if you dont
     return 0;
 }
 ```
