@@ -29,6 +29,10 @@
 
 ## Intermediate
 
+---
+
+* [Functional tools](functional-tools.md)
+
 ## Unit Test
 
 * [Untitled](unit-test/untitled.md)
