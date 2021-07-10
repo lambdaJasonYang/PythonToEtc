@@ -83,8 +83,19 @@ class method set  has implicit parameter, value
 {% endhint %}
 {% endtab %}
 
-{% tab title="Second Tab" %}
+{% tab title="Typescript" %}
+## Interface
 
+many times this is used to pass props
+
+```typescript
+interface MyProps{
+  label : string;
+  price?: number; //The ? marks the parameter as optional
+  [key: string]: any //allows us to add any additional property
+}
+
+```
 {% endtab %}
 {% endtabs %}
 
