@@ -76,6 +76,12 @@ postagePrice x
             | otherwise = 250
 ```
 {% endtab %}
+
+{% tab title="Typescript" %}
+```
+
+```
+{% endtab %}
 {% endtabs %}
 
 {% hint style="info" %}
