@@ -23,7 +23,7 @@ dotnet run Program.cs
 {% endtabs %}
 
 ```text
-stack ghc --package QuickCheck -- main.h
+stack ghc --package QuickCheck -- test.h
 ```
 
 
