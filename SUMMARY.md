@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Basic Types](README.md)
+* [Dev environment](README.md)
 * [Very Basics Tutorial](types.md)
 * [packages](packages.md)
 
