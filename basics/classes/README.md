@@ -97,6 +97,31 @@ interface MyProps{
 
 ```
 {% endtab %}
+
+{% tab title="Haskell" %}
+```haskell
+-- Enumeration types
+data Bool = True | False
+data Color = Red | Green | Blue
+
+-- Record types that contain fields
+data Vector2d = MakeVector Double Double
+data Person = Person Int String
+
+-- Parameterized types. Note the type parameter `a`
+data PairOf a = TwoValues a a
+
+-- Recursive types
+data IntList = Empty | Node Int IntList
+
+-- Complex types which combine many of these features
+data Maybe a = Nothing | Just a
+data Either a b = Left a | Right b
+data List a = Nil | Cons a (List a)             -- This is equivalent to the built-in [a] type
+data Tree a = Leaf a | Node a (Tree a) (Tree a)
+data MultiTree a = MultiTree a [MultiTree a]     -- Note the list
+```
+{% endtab %}
 {% endtabs %}
 
 
