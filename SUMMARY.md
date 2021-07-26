@@ -6,6 +6,7 @@
 
 ## Basics
 
+* [Interfaces and Typeclasses](basics/interfaces-and-typeclasses.md)
 * [Classes, Enums, Inheritance](basics/classes/README.md)
   * [Inheritance](basics/classes/inheritance.md)
   * [Enum](basics/classes/enum.md)
