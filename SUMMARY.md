@@ -13,6 +13,7 @@
 * [Float,Double,Decimal](basics/numbers.md)
 * [Nulls and Maybe Functor](basics/nulls.md)
 * [Arrays Lists Stack](basics/arrays-lists-stack/README.md)
+  * [Indexing](basics/arrays-lists-stack/indexing.md)
   * [Array Methods](basics/arrays-lists-stack/array-methods.md)
 * [Strings](basics/strings/README.md)
   * [Substrings](basics/strings/substrings.md)
