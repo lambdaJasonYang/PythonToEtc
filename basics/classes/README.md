@@ -4,7 +4,7 @@ description: Classes are basically custom types
 
 # Classes, Enums, Inheritance
 
-
+Classes are simply just a tuple of primitive data types
 
 {% tabs %}
 {% tab title="C\#" %}
