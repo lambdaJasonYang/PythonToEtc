@@ -3,6 +3,7 @@
 * [Dev environment](README.md)
 * [Very Basics Tutorial](types.md)
 * [packages](packages.md)
+* [Print, Cout, Output](print-cout-output.md)
 
 ## Basics
 
